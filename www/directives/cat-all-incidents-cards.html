@@ -1,0 +1,7 @@
+<div class="incidnets-grid">
+  <div ng-show="vm.getIncidents">
+    <div data-ng-repeat="incident in vm.getIncidents.incidents" data-cat-card t-cat-card-incidnet="incident">
+    </div>
+  </div>
+  <div ng-show="!vm.getIncidents"><ion-spinner icon="bubbles" class="spinner-location spinner-energized"></ion-spinner></div>
+</div>

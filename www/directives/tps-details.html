@@ -1,0 +1,16 @@
+<div class="incident-details" >
+    <div ng-show="!vm.records"><ion-spinner icon="bubbles" class="spinner-location spinner-energized"></ion-spinner></div>
+    <div ng-show="vm.records">
+        {{vm.incident}}
+        <div class="record-container" data-ng-repeat="record in vm.records">
+            <div class="record-created-on">{{record.created_on}}</div>
+            <div class="record-step-type">{{record.step_type}}</div>
+            <div class="record-reporter">{{record.reporter.name}}</div>
+            <div class="record-created-on">{{record.step_type}}</div>
+            <div class="record-alert-type">{{record.alert_type}}</div>
+            <div class="record-name-1">{{record.name_1}}</div>
+            <div class="record-name-2">{{record.name_2}}</div>
+            <div class="record-max-confidence">{{record.max_confidence}}</div>
+        </div>
+    </div>
+</div>
